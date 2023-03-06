@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: "poppins " sans-serif;
+  
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: fantasy;
+    font-style: italic;
+    color:aqua;
+    position: relative;
+    
+}
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(./assets/images/spiderbg.jpg);
+    background-position: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    position: relative;
+    transition: 300ms;
+    opacity: 1;
+}
+.multiText{
+   font-size: 80px;
+   font-style: italic;
+   font-family: fantasy;
+   color:white;
+   text-align: center;
+   text-transform: capitalize;
+
+}
+
+.container {
+    font-size: 16px;
+    width: 98vw;
+    max-width: 37.5em;
+    padding: 3em 1.8em;
+    background-color: rgb(43, 41, 41);
+    position: absolute;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgb(162, 161, 161);
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em
+}
+
+.search-container input,
+.search-container button {
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 0.3em;
+}
+
+.search-container input{
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 0.7em;
+    color: grey;
+}
+
+.search-container input:focus{
+    border-color: grey;
+}
+.search-container button{
+    background-color: rgb(24, 24, 24);
+    border: none;
+    cursor: pointer;
+}
+
+#result{
+    color:grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    position: relative;
+}
+
+.info {
+    position:relative;
+    display:flex;
+    grid-template-columns: 4fr 4fr;
+    align-items: center;
+    margin-top: 1.2em;
+}
+.poster {
+    width: 80%;
+   
+}
+
+.h2{
+ text-align: center;
+ font-size: 0.55em;
+ text-align: center;
+ letter-spacing: 0.06em;
+ font-weight: 600;
+ color:aqua;
+}
+
+.details {
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  color:aqua;
+  margin: 0.6em 0;
+  font-weight: 600;
+}
+.genre {
+  display: flex;
+  justify-content: space-around;
+}
+.genre div {
+  border: 1px solid aqua;
+  font-size: 0.75em;
+  padding: 0.4em 1.6em;
+  border-radius: 0.4em;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 500;
+  margin-top: 1.2em;
+  color: aqua;
+}
+.p {
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #a0a0a0;
+}
+.msg {
+  text-align:left;
+  color:aqua;
+  font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .poster {
+    margin: auto;
+    width: auto;
+    max-height: 10.8em;
+  }
+}

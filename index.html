@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE-JAR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href ="https://fonts.googleapis.com/css2?family=poppins:wght300;500;600&display=swap"/>
+    <link rel ="stylesheet"href =" style.css"/>
+    
+  </head>
+  <body>
+      <h1> MOVIE-JAR.
+      
+      </h1>
+    
+    <span class="multiText"></span>
+      <div class="container">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder=""
+            id="movie-name"
+            value=""
+          />
+          <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+         var typingEffect= new Typed (".multiText",{
+             strings:[
+                 " find the popular Blockbuster movies", "documentaries", "series","Comics", "find out their ratings","Rate them too"],
+   
+             loop:true,
+             typeSpeed:20,
+             backSpeed:80,
+             backDelay:150,
+         });
+      </script>
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+   
+    
+    
+
+  </body>
+</html>
