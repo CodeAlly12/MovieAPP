@@ -17,6 +17,7 @@
     
     <span class="multiText"></span>
       <div class="container">
+        
         <div class="search-container">
           <input
             type="text"
@@ -24,10 +25,25 @@
             id="movie-name"
             value=""
           />
+          <!-- <div class="history">
+            <h5> Search History</h5>
+            <div class="historyList">
+              <div class="historyItems">
+                <p> documentaries</p>
+              </div>
+            </div>
+
+          </div> -->
           <button id="search-btn">Search</button>
         </div>
         <div id="result"></div>
+        <div>
+          <!-- <rating min="-10" max="10" value="0"></rating> -->
+        </div>
+    
+     
       </div>
+
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <script>
          var typingEffect= new Typed (".multiText",{
@@ -43,8 +59,5 @@
     <script src="key.js"></script>
     <script src="script.js"></script>
    
-    
-    
-
   </body>
 </html>

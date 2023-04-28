@@ -1,10 +1,8 @@
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
-
 let result = document.getElementById("result");
 let historyListEl =document.querySelector(".historyList");
 
- let historyList = []
 
 
 
@@ -40,10 +38,14 @@ let getMovie = () => {
            <p>${data.Actors}</p>
            <h3>Runtime:</h3>
            <p>${data.Runtime}</p>
-           <h3> Ratings:</h3>
+           <h3>Ratings:</h3>
            <p>${data.imdbRating}</p>
+           <h3>Likes</h3>
+           <p>	&#128150 
+           ${data.imdbVotes}
+           </p>
            
-
+          
       `;}
     else { 
         result.innerHTML = `<h3 class='msg'>${data.Error}</h3>`;
@@ -56,9 +58,8 @@ let getMovie = () => {
     
   }  
 
-
-
-
+  // let historyListEl = document.querySelector(".historyList")
+  // let inputValueEl = document. querySelector (".inputSearch")
 };
  
 searchBtn.addEventListener("click", getMovie);
