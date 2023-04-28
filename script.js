@@ -1,7 +1,10 @@
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
-let result = document.getElementById("result");
 
+let result = document.getElementById("result");
+let historyListEl =document.querySelector(".historyList");
+
+ let historyList = []
 
 
 
@@ -9,7 +12,7 @@ let getMovie = () => {
   let movieName = movieNameRef.value;
   let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
   if (movieName.length<= 0){
-    result.innerHTML =`<h3 class="msg">Please Enter Title 
+    result.innerHTML =`<h3 class="msg">
     </h3>`;
   }
 
@@ -42,18 +45,22 @@ let getMovie = () => {
            
 
       `;}
-      else {
+    else { 
         result.innerHTML = `<h3 class='msg'>${data.Error}</h3>`;
       }
       
     })
     .catch(() => {
-      result.innerHTML = `<h3 class="msg">Error Occured</h3>`;
+      result.innerHTML = `<h3 class="msg">Title not found</h3>`;
     });
     
-  }
+  }  
+
+
+
 
 };
+ 
 searchBtn.addEventListener("click", getMovie);
 window.addEventListener("load",getMovie)
 
